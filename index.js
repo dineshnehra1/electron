@@ -13,7 +13,6 @@ fetch("https://api.quotable.io/random")
     .then(data => {
         let randomQuote = data.content;
         console.log(randomQuote);
-        // Replace "quote" with the id of the HTML element where you want to display the quote
         document.getElementById("Quote").innerHTML = randomQuote;
     })
     .catch(error => {
